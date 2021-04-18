@@ -1,0 +1,131 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.82.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-eOJMYsd53ii+scO/bJGFsiCZc+5NDVN2yr8+0RDqr0Ql0h+rP48ckxlpbzKgwra6" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="scripts/wrap.js"></script>
+    <script src="scripts/index.js"></script>
+    <title>Fake Company</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.0/examples/album/">
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+    <link rel="stylesheet" href="css/style.css">
+
+  </head>
+  <body>
+
+  <div class="breackMe-toolbar">
+    <div class="breackMe-toolbar-item selected" tool="mouse"><i class="fas fa-hand-paper"></i></div>
+    <div class="breackMe-toolbar-item" tool="grab"><i class="fas fa-hand-rock"></i></div>
+    <div class="breackMe-toolbar-item" tool="bomb"><i class="fas fa-bomb"></i></div>
+    <div class="breackMe-toolbar-item" tool="string"><i class="fab fa-stumbleupon"></i></div>
+    <div class="breackMe-toolbar-item" tool="spray"><i class="fas fa-spray-can"></i></div>
+    <div class="colorPicker">
+      <input type="color">
+    </div>
+    <div class="breackMe-toolbar-item" tool="reset"><i class="fas fa-redo"></i></div>
+  </div>
+  
+  <section>
+    <div class="navbar navbar-dark bg-dark shadow-sm">
+      <div class="container">
+        <a href="#" class="releasable navbar-brand d-flex align-items-center">
+          <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 55 55"><g xmlns="http://www.w3.org/2000/svg"><g><g><path d="M39.9926758,39.3466797H15.5073242c-1.1728516,0-2.1269531-0.9541016-2.1269531-2.1264648V20.6601563     c0-1.1723633,0.9541016-2.1264648,2.1269531-2.1264648h24.4853516c1.1728516,0,2.1269531,0.9541016,2.1269531,2.1264648     v16.5600586C42.1196289,38.3925781,41.1655273,39.3466797,39.9926758,39.3466797z M15.5073242,19.5336914     c-0.621582,0-1.1269531,0.5053711-1.1269531,1.1264648v16.5600586c0,0.6210938,0.5053711,1.1264648,1.1269531,1.1264648     h24.4853516c0.621582,0,1.1269531-0.5053711,1.1269531-1.1264648V20.6601563     c0-0.6210938-0.5053711-1.1264648-1.1269531-1.1264648H15.5073242z"/></g><g><path d="M32.3730469,19.5336914c-0.2763672,0-0.5-0.2236328-0.5-0.5v-2.2583008     c0-0.6210938-0.5053711-1.1264648-1.1264648-1.1264648H24.753418c-0.6210938,0-1.1264648,0.5053711-1.1264648,1.1264648     v2.2583008c0,0.2763672-0.2236328,0.5-0.5,0.5s-0.5-0.2236328-0.5-0.5v-2.2583008     c0-1.1723633,0.9541016-2.1264648,2.1264648-2.1264648h5.9931641c1.1723633,0,2.1264648,0.9541016,2.1264648,2.1264648v2.2583008     C32.8730469,19.3100586,32.6494141,19.5336914,32.3730469,19.5336914z"/></g><g><path d="M26.3984375,28.7060547h-4.671875c-3.2260742,0-6.2949219-1.5405273-8.2182617-4.1230469     c-0.0791016-0.0883789-0.1274414-0.2045898-0.1274414-0.331543c0-0.2763672,0.2192383-0.5,0.4956055-0.5h0.0083008     c0.1586914,0,0.3081055,0.0751953,0.4023438,0.203125c1.7338867,2.3491211,4.5151367,3.7514648,7.4394531,3.7514648h4.671875     c0.2763672,0,0.5,0.2236328,0.5,0.5S26.6748047,28.7060547,26.3984375,28.7060547z"/></g><g><path d="M33.7734375,28.7060547h-4.6635742c-0.2763672,0-0.5-0.2236328-0.5-0.5s0.2236328-0.5,0.5-0.5h4.6635742     c2.9243164,0,5.7055664-1.4023438,7.4394531-3.7514648c0.2578125-0.3515625,0.9067383-0.1381836,0.9067383,0.296875     c0,0.137207-0.0546875,0.2617188-0.1430664,0.3520508C40.0522461,27.1738281,36.9912109,28.7060547,33.7734375,28.7060547z"/></g><g><path d="M29.1054688,30.4658203h-2.7109375c-0.2763672,0-0.5-0.2236328-0.5-0.5v-3.5112305c0-0.2763672,0.2236328-0.5,0.5-0.5     h2.7109375c0.2763672,0,0.5,0.2236328,0.5,0.5v3.5112305C29.6054688,30.2421875,29.3818359,30.4658203,29.1054688,30.4658203z      M26.8945313,29.4658203h1.7109375v-2.5112305h-1.7109375V29.4658203z"/></g></g><g><path d="M27.5,52c-5.315918,0-10.3745117-1.6767578-14.6289063-4.8491211    c-0.2211914-0.1650391-0.2670898-0.4785156-0.1020508-0.699707c0.1650391-0.2216797,0.4780273-0.2670898,0.699707-0.1020508    C17.5493164,49.3916016,22.4013672,51,27.5,51s9.9506836-1.6083984,14.03125-4.6508789    c0.2207031-0.1660156,0.534668-0.1196289,0.699707,0.1020508c0.1650391,0.2211914,0.1191406,0.534668-0.1020508,0.699707    C37.8745117,50.3232422,32.815918,52,27.5,52z"/></g><g><path d="M41.8295898,8.75c-0.1035156,0-0.2080078-0.0322266-0.2978516-0.0986328C37.4370117,5.6083984,32.5849609,4,27.5,4    s-9.9370117,1.6083984-14.0317383,4.6513672c-0.2236328,0.1640625-0.5351563,0.1181641-0.699707-0.1030273    c-0.1645508-0.2216797-0.1186523-0.5351563,0.1030273-0.699707C17.140625,4.6767578,22.1987305,3,27.5,3    s10.359375,1.6767578,14.628418,4.8486328c0.2216797,0.1645508,0.2675781,0.4780273,0.1030273,0.699707    C42.1333008,8.6801758,41.9824219,8.75,41.8295898,8.75z"/></g><g><path d="M46.7495117,42.3300781c-0.1040039,0-0.2084961-0.0322266-0.2983398-0.0991211    c-0.2211914-0.1650391-0.2670898-0.4780273-0.1020508-0.699707C49.3916016,37.4472656,51,32.5952148,51,27.5    c0-5.097168-1.6049805-9.9453125-4.6411133-14.0209961c-0.1650391-0.2216797-0.1191406-0.534668,0.1020508-0.699707    c0.2216797-0.1660156,0.534668-0.1196289,0.699707,0.1020508C50.3266602,17.1308594,52,22.1860352,52,27.5    c0,5.3120117-1.6767578,10.3706055-4.8491211,14.6289063C47.0527344,42.2607422,46.9023438,42.3300781,46.7495117,42.3300781z"/></g><g><path d="M8.2504883,42.3300781c-0.152832,0-0.3032227-0.0693359-0.4013672-0.2011719C4.6767578,37.8706055,3,32.8120117,3,27.5    c0-5.3144531,1.6733398-10.3696289,4.8388672-14.6186523c0.1655273-0.2211914,0.4785156-0.2666016,0.699707-0.1020508    c0.2211914,0.1650391,0.2670898,0.4780273,0.1020508,0.699707C5.6044922,17.5541992,4,22.4023438,4,27.5    c0,5.0952148,1.6083984,9.9472656,4.6508789,14.03125c0.1650391,0.2216797,0.1191406,0.534668-0.1020508,0.699707    C8.4589844,42.2978516,8.3544922,42.3300781,8.2504883,42.3300781z"/></g><g><path d="M10.5292969,14.53125c-1.0239258,0-2.0483398-0.3901367-2.828125-1.1699219    c-0.7558594-0.7558594-1.171875-1.7602539-1.171875-2.8286133s0.4160156-2.0727539,1.171875-2.828125    c0.7553711-0.7558594,1.7597656-1.171875,2.828125-1.171875c1.0688477,0,2.0732422,0.4160156,2.8286133,1.171875l0,0l0,0    c1.5595703,1.559082,1.5595703,4.0966797,0,5.6567383C12.578125,14.1411133,11.5537109,14.53125,10.5292969,14.53125z     M10.5292969,7.5327148c-0.8012695,0-1.5541992,0.3120117-2.1210938,0.8789063s-0.8789063,1.3198242-0.8789063,2.1210938    s0.3120117,1.5546875,0.8789063,2.121582c1.1699219,1.1699219,3.0727539,1.1694336,4.2426758,0    c1.1694336-1.1699219,1.1694336-3.0732422,0-4.2426758l0,0C12.0839844,7.8447266,11.3310547,7.5327148,10.5292969,7.5327148z"/></g><g><path d="M10.5297852,48.472168c-1.0244141,0-2.0488281-0.3901367-2.8286133-1.1699219    c-0.7558594-0.7553711-1.171875-1.7597656-1.171875-2.828125c0-1.0688477,0.4160156-2.0732422,1.171875-2.8286133l0,0l0,0    c1.559082-1.5595703,4.0966797-1.5595703,5.6567383,0c1.5595703,1.5595703,1.5595703,4.097168,0,5.6567383    C12.578125,48.0820313,11.5537109,48.472168,10.5297852,48.472168z M10.5292969,41.4750977    c-0.7680664,0-1.5361328,0.2924805-2.1210938,0.8774414l0,0c-0.5668945,0.5668945-0.8789063,1.3198242-0.8789063,2.121582    c0,0.8012695,0.3120117,1.5541992,0.8789063,2.1210938c1.1689453,1.1689453,3.0717773,1.1699219,4.2426758,0    c1.1694336-1.1699219,1.1694336-3.0727539,0-4.2426758C12.065918,41.7675781,11.2978516,41.4750977,10.5292969,41.4750977z     M8.0546875,41.9990234h0.0097656H8.0546875z"/></g><g><path d="M44.4707031,48.472168c-1.0244141,0-2.0488281-0.3901367-2.8286133-1.1699219    c-1.5595703-1.5595703-1.5595703-4.097168,0-5.6567383c1.5605469-1.5595703,4.0981445-1.559082,5.6567383,0    c0.7558594,0.7553711,1.171875,1.7597656,1.171875,2.8286133c0,1.0683594-0.4160156,2.0727539-1.171875,2.828125    C46.519043,48.0820313,45.4946289,48.472168,44.4707031,48.472168z M44.4702148,41.4750977    c-0.7680664,0-1.5361328,0.2924805-2.1210938,0.8774414c-1.1694336,1.1699219-1.1694336,3.0727539,0,4.2426758    c1.1689453,1.1689453,3.0717773,1.1699219,4.2426758,0c0.5668945-0.5668945,0.8789063-1.3198242,0.8789063-2.1210938    c0-0.8017578-0.3120117-1.5546875-0.8789063-2.121582C46.0068359,41.7675781,45.2387695,41.4750977,44.4702148,41.4750977z"/></g><g><path d="M44.4702148,14.53125c-1.0239258,0-2.0483398-0.3901367-2.828125-1.1699219    c-1.5595703-1.5600586-1.5595703-4.0976563,0-5.6567383c1.5102539-1.5112305,4.1455078-1.512207,5.6567383,0    c0.7558594,0.7553711,1.171875,1.7597656,1.171875,2.828125s-0.4160156,2.0727539-1.171875,2.8286133    C46.519043,14.1411133,45.4946289,14.53125,44.4702148,14.53125z M44.4707031,7.5327148    c-0.8017578,0-1.5546875,0.3120117-2.121582,0.8789063c-1.1694336,1.1694336-1.1694336,3.0727539,0,4.2426758    c1.1708984,1.1708984,3.0737305,1.1699219,4.2426758,0c0.5668945-0.5668945,0.8789063-1.3203125,0.8789063-2.121582    s-0.3120117-1.5541992-0.8789063-2.1210938S45.2719727,7.5327148,44.4707031,7.5327148z"/></g></g></svg>
+          <strong>Fake Company Inc.</strong>
+        </a>
+      </div>
+    </div>
+
+    <div class="py-5 text-center container">
+      <div class="row py-lg-5">
+        <div class="col-lg-6 col-md-8 mx-auto">
+          <h1 class="fw-light releasableText">About Us</h1>
+          <p class="lead text-muted releasableText">I know you like money, money good, subscribe now with your company and star make EASY money, right now, for just $200 per day</p>
+          <p>
+            <a href="#" class="btn btn-primary my-2 releasable">Get Money</a>
+            <a href="#" class="btn btn-secondary my-2 releasable">Contact Us</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="marketing">
+
+    <!-- Three columns of text below the carousel -->
+    <section>
+      <div class="row clients">
+        <h1 class="releasableText fw-light releasableText" style="text-align: center; margin-bottom: 45px;">Clients</h1>
+        <div class="col-lg-4 d-flex flex-column align-items-center">
+          <img class="releasableCircle" src="images/stonks.png" width="140" height="140">
+
+          <h2 class="releasableText">Jeff Bezos</h2>
+          <p class="releasableText">I'm the richest man alive STONKS</p>
+          <p><a class="btn btn-secondary releasable" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 d-flex flex-column align-items-center">
+          <img class="releasableCircle" src="images/elon.png" width="140" height="140">
+
+          <h2 class="releasableText">Elon Musk</h2>
+          <p class="releasableText">Space X is going to put a literal Dogecoin on the literal moon</p>
+          <p><a class="btn btn-secondary releasable" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+        <div class="col-lg-4 d-flex flex-column align-items-center">
+          <img class="releasableCircle" src="images/moneyprinter.png" width="140" height="140">
+
+          <h2 class="releasableText">Money Printer</h2>
+          <p class="releasableText">brrrrrrrrrr brrr brrrrrrr.</p>
+          <p><a class="btn btn-secondary releasable" href="#">View details &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div>
+    </section>
+
+      <div class="row featurette my-4 d-flex justify-content-center">
+        <div class="col-md-6 d-flex flex-column px-5 justify-content-center">
+          <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It?ll blow your mind.</span></h2>
+          <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+        </div>
+        <div class="col-md-5">
+          <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+        </div>
+      </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette my-4 d-flex justify-content-center">
+      <div class="col-md-6 d-flex flex-column px-5 justify-content-center order-md-2">
+        <h2 class="featurette-heading">Oh yeah, it?s that good. <span class="text-muted">See for yourself.</span></h2>
+        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+      </div>
+      <div class="col-md-5 ml-3">
+        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+  </div>
+  <canvas id="spray"></canvas>
+  </body>
+</html>

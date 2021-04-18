@@ -1,0 +1,150 @@
+html, body {
+    position: relative;
+}
+
+canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: none;
+    z-index: 100;
+}
+
+canvas#spray {
+    z-index: 102;
+}
+
+#sketch {
+    height: 200px;
+}
+
+#block {
+    width: 100px;
+    height: 100px;
+    background-color: red;
+}
+
+.matter {
+    position: absolute;
+    z-index: 100;
+    margin: 0;
+}
+
+.transparent {
+    opacity: 0;
+}
+
+.breackMe-toolbar {
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    right: 0;
+    top: 15%;
+    padding: 16px 8px 16px 10px;
+    background-color: #7a397a;
+    justify-content: space-evenly;
+    border-radius: 15px 0 0 15px;
+    z-index: 999999;
+}
+
+.breackMe-toolbar-item {
+    background-color: #fff;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7a397a;
+    margin-bottom: 10px;
+}
+
+.breackMe-toolbar-item:hover {
+    color: #ffffff;
+    background: #5a0a5a;
+}
+
+.breackMe-toolbar-item.selected {
+    color: #ffffff;
+    background: #5a0a5a;
+}
+
+.colorPicker {
+    border: solid 2px #fff;
+    background-color: #000;
+    font-size: 20px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #7a397a;
+    margin-bottom: 10px;
+}
+
+input[type="color"] {
+    opacity: 0;
+}
+
+
+/* Explosion */
+.explosion {
+    position: absolute;
+    width: 600px;
+    height: 600px;
+    pointer-events: none;
+    z-index: 99999;
+}
+
+.explosion .particle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    animation: pop .8s reverse forwards;
+    animation-timing-function: ease-in;
+    z-index: 99999;
+}
+  
+@keyframes pop {
+    from {
+        opacity: 0;
+    }
+    to {
+        top: 50%;
+        left: 50%;
+        opacity: 1;
+    }
+}
+
+.circle {
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+}
+
+.clients {
+    background-color: #eee;
+    width: 100%;
+    margin: 0;
+    padding: 50px 8%;
+}
+
+.clients p {
+    text-align: center;
+}
+
+.featurette {
+    margin-left: 0;
+    margin-right: 0;
+}
+
+img {
+    border-radius: 50%;
+}
+
+.navbar-brand {
+    background-color: #212529!important;
+}
