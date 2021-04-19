@@ -1,5 +1,5 @@
 # BeachHacks2021
-Our project for BeachHacls 2021
+Our winner project from "Best UI/UX" from BeachHacks 2021
 
 Project name: I hate this website
 
