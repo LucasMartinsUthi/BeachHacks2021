@@ -1,5 +1,5 @@
 # BeachHacks2021
-My project for BeachHacls 2021
+Our project for BeachHacls 2021
 
 Project name: I hate this website
 
