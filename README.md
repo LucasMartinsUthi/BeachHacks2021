@@ -29,7 +29,7 @@ We decided to leave this project as an aid to develop others further using the p
 Built With
 Bootstrap5, CSS3, HTML5, Javascript, JQuery, Matter.js
 
-Prject Video
+Project Video
 https://youtu.be/sTpJ2xwnbyw
 
 Project Images
